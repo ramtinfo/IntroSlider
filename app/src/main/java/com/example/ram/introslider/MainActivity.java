@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void launchHomeScreen() {
-        PrfsManager.getInstance(this).setFirstTimeLaunch(false);
+        PrfsManager.getInstance(this).setFirstTimeLaunch(true);
         startActivity(new Intent(MainActivity.this, HomeScreen.class));
         finish();
     }
